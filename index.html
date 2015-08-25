@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Angular in a Material World</title>
+
+		<meta name="description" content="description">
+		<meta name="author" content="Nicholas Mackey">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section>
+						<h2>Angular in a Material World</h2>
+						<p>Building Material Design into you Angular Apps with Angular Material.</p>
+						<p>
+							<small>Created by Nicholas Mackey</small>
+						</p>
+						<p>
+							<small>Web: <a href="http://nmackey.com">nmackey.com</a> / Twitter: <a href="http://twitter.com/nicholas_mackey">@nicholas_mackey</a> / Github: <a href="http://github.com/nmackey">nmackey</a></small>
+						</p>
+						<aside class="notes">
+							Who is using some sort of widget/grid framework?<br>
+							Bootstrap?<br>
+							Foundation?<br>
+							Angular Material?
+						</aside>
+					</section>
+
+					<section>
+						<h2>Outline</h2>
+						<ul>
+							<li class="fragment">Material Design</li>
+							<li class="fragment">Angular Material</li>
+							<li class="fragment">How to get Started</li>
+							<li class="fragment">Code Examples</li>
+							<li class="fragment">Lessons Learned</li>
+						</ul>
+						<aside class="notes">
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is Material Design?</h2>
+						<ul>
+							<li class="fragment">Unvailed in 2014 at Google I/O</li>
+							<li class="fragment">Google's push to make design more of a central feature of android and it's business.</li>
+						</ul>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section >
+						<iframe class="stretch" data-src="https://www.youtube.com/embed/Q8TXgCzxEnw?&rel=0&vq=large&autoplay=1" frameborder="0" allowfullscreen></iframe>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2>What is <a href="https://www.google.com/design/spec/material-design/introduction.html">Material Design?</a></h2>
+						<p>Set of design principles for applications based on physical principles of paper and ink combined with science and technology.</p>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2>Environment</h2>
+						<p>The material environment is a 3D space, which means all objects have x, y, and z dimensions.</p>
+						<img style="height:400px;" data-src="./images/environment_1.png" alt="">
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2>Material properties</h2>
+						<p>Material has varying x & y dimensions with a uniform thickness (1dp).</p>
+						<img style="height:400px;" data-src="./images/material_properties_1.png" alt="">
+						<img style="height:400px;" data-src="./images/material_properties_2.png" alt="">
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2>Elevation and Shadows</h2>
+						<p>Shadows result naturally from the realtive elevation between material elements.</p>
+						<video class="stretch" data-autoplay loop data-src="./videos/elevation_and_shadows_1.webm"></video>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2>More...</h2>
+						<p class="fragment">Animation</p>
+						<p class="fragment">Style</p>
+						<p class="fragment">Componenets</p>
+						<p class="fragment">Patterns</p>
+						<p class="fragment">Usability</p>
+						<aside class="notes">
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is <a href="https://material.angularjs.org/latest/#/">Angular Material?</a></h2>
+						<p>The Angular Material project is an implementation of Material Design in Angular.js. This project provides a set of reusable, well-tested, and accessible UI components based on the Material Design system.</p>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2>caniuse?</h2>
+						<ul>
+							<li class="fragment">Browser Support (n-1)</li>
+							<li class="fragment">Angular 1.3.x or higher</li>
+							<li class="fragment">Not quite ready for prime time (pre 1.0)</li>
+							<li class="fragment">1.0 targeted for early fall</li>
+						</ul>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2>Highlights</h2>
+						<ul>
+							<li class="fragment">Themes</li>
+							<li class="fragment">Grid (Flexbox)</li>
+							<li class="fragment">Input Elements</li>
+							<li class="fragment">Accessibility</li>
+							<li class="fragment">Touch/Gesture</li>
+						</ul>
+						<aside class="notes">
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Where do I start?</h2>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2>Flexbox</h2>
+						<p>Review flexbox b/c angular material's grid system is based on it.</p>
+						<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Nice Guide</a>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2><a href="https://github.com/Swiip/generator-gulp-angular">Angular Gulp Generator</a></h2>
+						<p>Yoeman generator that will bootstrap an app for you with Angular Material.</p>
+						<aside class="notes">
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>Examples</h2>
+					<p>We are going to bootstrap angular material site for viewing and submitting talk proposals.</p>
+					<ul>
+						<li class="fragment">Generator</li>
+						<li class="fragment">Navigation</li>
+						<li class="fragment">Font Icons</li>
+						<li class="fragment">Lists & Forms</li>
+						<li class="fragment">Themes</li>
+						<li class="fragment">Accessibility</li>
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>What I learned</h2>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2>Good</h2>
+						<ul>
+							<li class="fragment">Supported by google (alphabet?)</li>
+							<li class="fragment">Uses Flexbox</li>
+							<li class="fragment">Pretty</li>
+							<li class="fragment">Not bootstrap</li>
+						</ul>
+						<aside class="notes">
+						</aside>
+					</section>
+
+					<section>
+						<h2>Bad</h2>
+						<ul>
+							<li class="fragment">Not ready yet (pre 1.0 & performance issues)</li>
+							<li class="fragment">Still missing a few things...maybe</li>
+							<li class="fragment">Some widgets don't play well together (toolbar & tabs)</li>
+							<li class="fragment">Missing some documentation (styling, options, services)</li>
+						</ul>
+						<aside class="notes">
+							md-avatar, $mdUtil
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2><a href="http://nmackey.com/ng-nebraska-site/">New Site</a></h2>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h2>Q & A?</h2>
+					<aside class="notes">
+					</aside>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<p>
+						<small>Presentation online at <a href="http://nmackey.com/presentation-angular-material/">nmackey.com/presentation-angular-material/</a></small>
+						<small>Examples online at <a href="http://github.com/nmackey/presentation-angular-material-examples">github.com/nmackey/presentation-angular-material-examples</a></small>
+						<small>Slides available at <a href="http://github.com/nmackey/presentation-angular-material">github.com/nmackey/presentation-angular-material</a></small>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				previewLinks: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
